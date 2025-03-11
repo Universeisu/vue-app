@@ -28,4 +28,4 @@ jobs:
           registry: ghcr.io/universeisu  # registry ต้องพิมพ์เล็ก
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          tags: ${{ env.TAG_NAME }}, latest
+          tags: ${{ env.TAG_NAME }}, latest 
