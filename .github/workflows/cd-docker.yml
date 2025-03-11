@@ -3,7 +3,7 @@ name: 'build and deploy production'
 on:
   push:
     tags:
-      - '*'
+      - 'xxxx'
 
 jobs:
   release-docker-image-job:
@@ -40,3 +40,4 @@ jobs:
           docker rm -f ${{ env.CONTAINER_NAME }} || true
           docker pull ${{ env.DOCKER_IMAGE_URL }}
           docker run --restart=always -d --name ${{ env.CONTAINER_NAME }} -p 9003:80 ${{ env.DOCKER_IMAGE_URL }}
+s
